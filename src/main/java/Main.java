@@ -1,5 +1,5 @@
-import Collection.Map.IMap;
-import Collection.Map.MapRealization;
+import Collection.IMap;
+import Collection.MapRealization;
 import Container.LinkedList;
 
 import java.util.Random;

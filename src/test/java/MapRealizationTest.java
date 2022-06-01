@@ -1,6 +1,6 @@
-import Collection.Map.MapRealization;
+import Collection.MapRealization;
 import Container.LinkedList;
-import Collection.Map.IMap;
+import Collection.IMap;
 import com.google.common.base.Stopwatch;
 import org.junit.jupiter.api.Test;
 import java.util.concurrent.ThreadLocalRandom;

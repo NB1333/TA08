@@ -1,4 +1,4 @@
-package Collection.Map;
+package Collection;
 
 import java.util.Objects;
 
