@@ -1,4 +1,4 @@
-package Container.LinkedList;
+package Container;
 
 public class Node<T> {
     protected final T value;

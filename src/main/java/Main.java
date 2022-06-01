@@ -1,6 +1,6 @@
 import Collection.Map.IMap;
 import Collection.Map.MapRealization;
-import Container.LinkedList.LinkedList;
+import Container.LinkedList;
 
 import java.util.Random;
 import java.util.Scanner;

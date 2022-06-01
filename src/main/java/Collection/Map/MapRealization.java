@@ -1,7 +1,7 @@
 package Collection.Map;
 
 import Container.IContainer;
-import Container.LinkedList.LinkedList;
+import Container.LinkedList;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
@@ -10,7 +10,6 @@ public class MapRealization<K extends Comparable<K>, V> implements IMap<K, V> {
     private static final int DEFAULT_CAPACITY = 16;
     private static final double DEFAULT_LOAD_FACTOR = 0.75;
     private final double loadFactor;
-    private final Object containerType;
     private int capacity;
     private int size;
     private IContainer<Entry<K, V>>[] elements;
@@ -24,12 +23,11 @@ public class MapRealization<K extends Comparable<K>, V> implements IMap<K, V> {
     }
 
     public MapRealization(Object obj, double loadFactor, int capacity) {
-        this.containerType = obj;
         this.capacity = capacity;
         this.loadFactor = loadFactor;
 
         try {
-            if (containerType instanceof IContainer) {
+            if (obj instanceof IContainer) {
                 this.elements = new LinkedList[capacity];
             }
         } catch (IllegalArgumentException e) {

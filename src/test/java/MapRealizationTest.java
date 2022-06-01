@@ -1,5 +1,5 @@
 import Collection.Map.MapRealization;
-import Container.LinkedList.LinkedList;
+import Container.LinkedList;
 import Collection.Map.IMap;
 import com.google.common.base.Stopwatch;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ class MapRealizationTest {
         testMethod(new MapRealization<>(new LinkedList<>()), 10_000);
         testMethod(new MapRealization<>(new LinkedList<>()), 100_000);
         testMethod(new MapRealization<>(new LinkedList<>()), 200_000);
-        testMethod(new MapRealization<>(new LinkedList<>()), 10_000_000);
+        testMethod(new MapRealization<>(new LinkedList<>()), 1_000_000);
     }
 
     private Stopwatch searchingTime(IMap<Integer, Integer> newMap) {

@@ -1,6 +1,4 @@
-package Container.LinkedList;
-
-import Container.IContainer;
+package Container;
 
 import java.util.NoSuchElementException;
 import java.util.Objects;
